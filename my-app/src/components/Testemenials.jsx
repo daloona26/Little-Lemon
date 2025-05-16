@@ -8,7 +8,7 @@ const Testomenials = () => {
         <li className="review">
           <h5>Rating</h5>
           <div className="reviewr">
-            <img src="" alt="client" />
+            <img src="/images/user.png" alt="client" />
             <p>Name</p>
           </div>
           <p>Review</p>
@@ -16,7 +16,7 @@ const Testomenials = () => {
         <li className="review">
           <h5>Rating</h5>
           <div className="reviewr">
-            <img src="" alt="client" />
+            <img src="/images/user.png" alt="client" />
             <p>Name</p>
           </div>
           <p>Review</p>
@@ -24,7 +24,7 @@ const Testomenials = () => {
         <li className="review">
           <h5>Rating</h5>
           <div className="reviewr">
-            <img src="" alt="client" />
+            <img src="/images/user.png" alt="client" />
             <p>Name</p>
           </div>
           <p>Review</p>
@@ -32,7 +32,7 @@ const Testomenials = () => {
         <li className="review">
           <h5>Rating</h5>
           <div className="reviewr">
-            <img src="" alt="client" />
+            <img src="/images/user.png" alt="client" />
             <p>Name</p>
           </div>
           <p>Review</p>

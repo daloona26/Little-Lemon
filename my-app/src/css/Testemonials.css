@@ -31,10 +31,14 @@
   font-size: 1rem;
 }
 
-.reviewr{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    align-items: center;
-    font-weight: 600;
+.reviewr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  font-weight: 600;
+}
+
+.reviewr img {
+  width: 3rem;
 }
