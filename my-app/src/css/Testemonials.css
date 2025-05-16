@@ -1,0 +1,40 @@
+.testemonilas {
+  text-align: center;
+  background-color: #495e57;
+  padding: 2rem 0rem;
+}
+
+.testemonilas h1 {
+  font-size: 2rem;
+}
+
+.reviews-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-left: 50%;
+  transform: translateX(-90%);
+}
+
+.review {
+  background-color: #f5f5f5;
+  width: 12rem;
+  height: 11.5rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.review h5 {
+  font-size: 1rem;
+}
+
+.reviewr{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+    font-weight: 600;
+}

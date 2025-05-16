@@ -1,0 +1,33 @@
+.hero {
+  background-color: #495e57;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 8rem;
+  gap: 12rem;
+
+}
+
+.title{
+    color: #F4CE14;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+.sub-heading{
+    color: #EDEFFE;
+    font-size: 1.6rem;
+}
+
+.text{
+    color: #EDEFFE;
+    font-size: 1.6rem;
+}
+
+
+.restaurant {
+  width: 25rem;
+}
+
+.restaurant img {
+  width: 14rem;
+}

@@ -1,0 +1,29 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 4rem;
+}
+
+.about-title {
+  color: #0a0a0a;
+  font-size: 3.6rem;
+}
+
+.about h4 {
+  font-size: 1.6rem;
+  color: #0a0a0a;
+}
+.about p {
+  font-size: 1.6rem;
+}
+.about .chefs img {
+  width: 17.5rem;
+  height: 20rem;
+}
+
+.chefs .img1 {
+  transform: translate(100%, 0%);
+}
+.chefs .img2 {
+  transform: translate(-50%, 30%);
+}

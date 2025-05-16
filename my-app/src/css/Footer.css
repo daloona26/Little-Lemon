@@ -1,0 +1,29 @@
+.footer-padding{
+    padding: 3rem 3rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer-logo img{
+    width: 10rem;
+    height: 16rem;
+}
+
+.footer-sub{
+    display: flex;
+    flex-direction: column;
+}
+.footer-sub h4{
+    font-size: 1.4rem;
+}
+
+.footer-sub a{
+    font-size: 1rem;
+}
+.footer-sub a:hover{
+    font-size: 1.1rem;
+}

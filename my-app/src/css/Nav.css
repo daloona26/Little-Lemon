@@ -1,0 +1,33 @@
+.nav {
+  margin: 2rem 10rem;
+  display: grid;
+  grid-template-columns: 7.5rem auto;
+  align-items: center;
+  gap: 8rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: ease-in 300ms;
+  font-size: 1.2rem;
+}
+
+.link:hover {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.logo {
+  width: 14rem;
+}

@@ -1,0 +1,60 @@
+body {
+  background-color: #edeffe;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 2rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.form-container {
+  background-color: #495e57;
+  margin-top: 1rem;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+}
+
+.res-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: #edeffe;
+  height: 70vh;
+  justify-content: space-around;
+}
+
+label {
+  color: #f4ce14;
+  font-size: 1.5rem;
+}
+
+.inp {
+  font-size: 1.2rem;
+  color: #495e57;
+  border-radius: 0.6rem;
+  padding: 0.3rem;
+  border: none;
+}
+
+.inp:focus {
+  border: none;
+  outline: none;
+}
+
+
+.res-btn {
+  background-color: #000;
+  color: #f4ce14;
+  width: 14rem;
+  height: 4rem;
+  padding: 1rem 0.5rem;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  align-self: center;
+}
