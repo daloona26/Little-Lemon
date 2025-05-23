@@ -5,9 +5,9 @@ import Nav from "./components/Nav";
 import Specials from "./components/Specials";
 import Testomenials from "./components/Testemenials";
 import About from "./components/About";
+
 function App() {
   return (
-      
     <div className="App">
       <Nav />
       <Hero />

@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
+import { jwtDecode } from "jwt-decode";
 
 export const ReservationContext = createContext();
 
@@ -17,7 +18,28 @@ export const ReservationProvider = ({ children }) => {
   }, [reservations]);
 
   const addReservation = (newReservation) => {
-    setReservations((prev) => [...prev, newReservation]);
+    const token = localStorage.getItem("access");
+
+    if (!token) {
+      console.error("No access token found.");
+      return;
+    }
+
+    let username = null;
+    try {
+      const decoded = jwtDecode(token);
+      username = decoded.username || decoded.user_id;
+    } catch (err) {
+      console.error("Token decoding failed:", err);
+      return;
+    }
+
+    const reservationWithUser = {
+      ...newReservation,
+      username,
+    };
+
+    setReservations((prev) => [...prev, reservationWithUser]);
   };
 
   const deleteReservation = (indexToDelete) => {

@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BookingPage from "./components/BookingPage";
 import Reservations from "./components/Reservations";
 import { ReservationProvider } from "./context/ReservationContext";
+import Login from "./components/Login";
+import Signup from "./components/SignUp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +19,10 @@ root.render(
         <Route index path="/" element={<App />} />
         <Route path="/booking" element={<BookingPage />} />
         <Route path="/reservations" element={<Reservations />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+
+
       </Routes>
     </ReservationProvider>
   </BrowserRouter>
