@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_!crhda2p@49e(hlj091pz!wo#ois4eu0tv$gk9yyubi(7flix'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False # <--- Ensure this is False and remove the other DEBUG=True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['daloona26.pythonanywhere.com'] # <--- Corrected typo and removed duplicate empty list
 
 
 # Application definition
@@ -41,11 +41,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'corsheaders',
-    'app'
-
+    'app' # Assuming this is your custom app
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware', # <--- Good placement
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -54,8 +54,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-MIDDLEWARE.insert(0, 'corsheaders.middleware.CorsMiddleware')
-ROOT_URLCONF = 'backend.urls'
+
+ROOT_URLCONF = 'backend.urls' # Assuming your inner project is 'backend'
 
 TEMPLATES = [
     {
@@ -73,18 +73,18 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'backend.wsgi.application'
+WSGI_APPLICATION = 'backend.wsgi.application' # Assuming your inner project is 'backend'
 
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# COMMENT OUT OR REMOVE THIS SECTION IF YOU ARE NOT USING A DATABASE
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation
@@ -129,11 +129,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-DEBUG = False
-ALLOWED_HOSTS = ['daloon26.pythonanywhere.com']
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOW_ALL_ORIGINS = True # <--- This is fine for demo
+# CORS_ALLOWED_ORIGINS = ["https://your-frontend-url.netlify.app"]
