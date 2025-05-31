@@ -9,6 +9,7 @@ h3 {
   color: #000;
   font-weight: 700;
 }
+
 .signup-container {
   max-width: 40%;
   margin-left: auto;
@@ -43,6 +44,7 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+
 .activity-signup {
   display: flex;
   justify-content: space-around;
@@ -57,4 +59,83 @@ h3 {
   background-color: #f4ce14;
   padding: 0.3rem 0.2rem;
   border-radius: 0.6rem;
+}
+
+@media (max-width: 1024px) {
+  .signup-container {
+    max-width: 50%;
+    left: 5%;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .btn-sign {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    max-width: 60%;
+    left: 0;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .username-login {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+
+  .btn-sign {
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .link-login {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.2rem;
+  }
+
+  .activity-signup {
+    right: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-container {
+    max-width: 80%;
+    padding: 1rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .username-login {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+  }
+
+  .btn-sign {
+    width: 9rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+  }
+
+  .link-login {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+  }
+
+  .activity-signup {
+    right: 5%;
+  }
 }

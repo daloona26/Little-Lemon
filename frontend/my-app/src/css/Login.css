@@ -62,3 +62,73 @@ h3 {
   padding: 0.3rem 0.2rem;
   border-radius: 0.8rem;
 }
+
+@media (max-width: 1024px) {
+  .login-container {
+    max-width: 70%;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .btn-login {
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    max-width: 80%;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .username-login,
+  .password-login {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+
+  .btn-login {
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .link-signup {
+    font-size: 1rem;
+    padding: 0.2rem 0.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    max-width: 90%;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .username-login,
+  .password-login {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+  }
+
+  .btn-login {
+    width: 7rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+  }
+
+  .link-signup {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+  }
+}

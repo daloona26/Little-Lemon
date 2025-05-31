@@ -1,0 +1,15 @@
+body {
+    background-color: #495e57 !important; 
+    color: #fff;
+}
+
+.module caption {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f4ce14;
+}
+
+.button {
+    background-color: #f4ce14 !important;
+    border-radius: 5px;
+}

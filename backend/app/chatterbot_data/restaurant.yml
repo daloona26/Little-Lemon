@@ -1,0 +1,42 @@
+categories:
+  - Restaurant Chatbot
+
+conversations:
+  - ["hello", "Hi! Welcome to our restaurant. How can I assist you today?"]
+  - ["hi", "Hey there! What would you like to know about our restaurant?"]
+  - ["hey", "Hello! Feel free to ask me anything about our menu or services."]
+  
+  - ["where are you located", "We're in Downtown Cairo, Egypt. Come visit us!"]
+  - ["where is the restaurant", "Our restaurant is in the heart of Downtown Cairo, ready to serve you!"]
+  - ["restaurant location", "You'll find us at Downtown Cairo—great food and great ambiance!"]
+
+  - ["can i reserve a table online", "Of course! You can book your reservation directly through our website."]
+  - ["how do i book a table", "Just head to our website and follow the reservation steps."]
+  - ["can i book a reservation", "Yes! We recommend reserving early for the best experience."]
+  - ["can i reserve?", "Yes! You can reserve a table online through our website."]
+
+  - ["do you offer delivery", "Yes! You can place an order online and have it delivered straight to your door."]
+  - ["delivery options", "We offer delivery through our website or third-party services."]
+  - ["can i order online", "Absolutely! Check out our online menu and order directly from there."]
+
+  - ["what are your hours", "We're open daily from 9 AM to 10 PM!"]
+  - ["opening hours", "We open at 9 AM and close at 10 PM every day."]
+  - ["closing time", "We close at 10 PM, but you can still order online before then!"]
+
+  - ["do you have vegetarian options", "Yes! We have delicious vegetarian meals that you'll love."]
+  - ["are there vegan meals available", "Absolutely! Our menu has several plant-based options."]
+  - ["vegetarian options", "Yes, we have a variety of vegetarian-friendly dishes for you to choose from."]
+
+  - ["what’s your most popular dish", "Our best-selling dish is Vegetables Meat, a customer favorite!"]
+  - ["what do people love the most", "Most of our guests rave about the Vegetables Meat dish."]
+  - ["best dish on the menu", "Vegetables Meat is a must-try! Our customers love it."]
+  
+  - ["what is on the menu", "Our menu features a variety of fresh, flavorful dishes—feel free to browse online!"]
+  - ["menu options", "We have appetizers, main courses, and desserts! What are you in the mood for?"]
+  - ["food items", "From hearty meals to light snacks, we have something for everyone."]
+
+  - ["who are you", "I'm your virtual assistant! I can help with reservations, orders, and restaurant info."]
+  - ["what can you do", "I can assist with booking a table, ordering food, and answering restaurant-related questions."]
+  - ["how do you work", "I use AI to provide instant answers about our restaurant, menu, and services."]
+  - ["who made you", "I was created to help guests quickly find information about our restaurant."]
+  - ["can you help me", "Absolutely! Let me know what you need—reservations, orders, or menu details."]

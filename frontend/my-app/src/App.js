@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Specials from "./components/Specials";
 import Testomenials from "./components/Testemenials";
 import About from "./components/About";
+import Chatbot from "./components/Chatbot";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Testomenials />
       <About />
       <Footer />
+      <Chatbot />
     </div>
   );
 }

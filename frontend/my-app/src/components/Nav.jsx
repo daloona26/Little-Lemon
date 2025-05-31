@@ -35,7 +35,7 @@ const Nav = () => {
             </a>
           </li>
           <li className="list-item">
-            <a className="link" href="#menu">
+            <a className="link" href="/menu">
               Menu
             </a>
           </li>
@@ -45,7 +45,7 @@ const Nav = () => {
             </a>
           </li>
           <li className="list-item">
-            <a className="link" href="#Order-online">
+            <a className="link" href="/order-online">
               Order Online
             </a>
           </li>

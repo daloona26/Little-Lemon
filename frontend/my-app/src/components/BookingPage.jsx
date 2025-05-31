@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { ReservationContext } from "../context/ReservationContext";
 import { useNavigate } from "react-router-dom";
+import { jwtDecode } from "jwt-decode";
 
 import "../css/BookingPage.css";
 const BookingPage = () => {
@@ -13,9 +14,27 @@ const BookingPage = () => {
 
   const { addReservation } = useContext(ReservationContext);
   const navigate = useNavigate();
+  const token = localStorage.getItem("access");
+  let currentUser = null;
+
+  if (token) {
+    try {
+      const decoded = jwtDecode(token);
+      currentUser = decoded.username || decoded.user_id;
+    } catch (err) {
+      console.error("Error decoding token:", err);
+    }
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+      if (!currentUser) {
+      alert("You must be logged in to make a reservation!");
+      navigate("/login"); 
+      return;
+    }
+
     addReservation(formData);
     setFormData({
       date: "2025-01-01",

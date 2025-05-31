@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { jwtDecode } from "jwt-decode";
 import { ReservationContext } from "../context/ReservationContext";
+import { useNavigate } from "react-router-dom";
 import "../css/Reservations.css";
 
 const Reservations = () => {
+  const navigate = useNavigate();
   const { reservations, deleteReservation } = useContext(ReservationContext);
 
   const token = localStorage.getItem("access");
@@ -16,6 +18,11 @@ const Reservations = () => {
     } catch (err) {
       console.error("Error decoding token:", err);
     }
+  }
+
+  if (!currentUser) {
+    navigate("/login");
+    return null;
   }
 
   const userReservations = reservations.filter(

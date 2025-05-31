@@ -4,25 +4,23 @@
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem 8rem;
   gap: 12rem;
-
 }
 
-.title{
-    color: #F4CE14;
-    font-size: 3.5rem;
-    text-transform: capitalize;
+.title {
+  color: #F4CE14;
+  font-size: 3.5rem;
+  text-transform: capitalize;
 }
 
-.sub-heading{
-    color: #EDEFFE;
-    font-size: 1.6rem;
+.sub-heading {
+  color: #EDEFFE;
+  font-size: 1.6rem;
 }
 
-.text{
-    color: #EDEFFE;
-    font-size: 1.6rem;
+.text {
+  color: #EDEFFE;
+  font-size: 1.6rem;
 }
-
 
 .restaurant {
   width: 25rem;
@@ -30,4 +28,78 @@
 
 .restaurant img {
   width: 14rem;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 4rem;
+    gap: 6rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .sub-heading,
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .restaurant {
+    width: 22rem;
+  }
+
+  .restaurant img {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 1.5rem 3rem;
+    gap: 4rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .sub-heading,
+  .text {
+    font-size: 1.3rem;
+  }
+
+  .restaurant {
+    width: 20rem;
+  }
+
+  .restaurant img {
+    width: 11rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .sub-heading,
+  .text {
+    font-size: 1.2rem;
+  }
+
+  .restaurant {
+    width: 18rem;
+  }
+
+  .restaurant img {
+    width: 10rem;
+  }
 }

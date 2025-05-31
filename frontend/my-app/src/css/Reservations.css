@@ -45,3 +45,57 @@
   height: 3rem;
   margin-top: 1rem;
 }
+
+@media (max-width: 1024px) {
+  .reservations-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reservation {
+    width: 12rem;
+  }
+
+  .reservation-btn {
+    width: 7rem;
+    height: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservations-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reservation {
+    width: 10rem;
+    padding: 1rem;
+  }
+
+  .reservation-btn {
+    width: 6rem;
+    height: 2.5rem;
+  }
+
+  .res-name {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservations-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .reservation {
+    width: 100%;
+  }
+
+  .reservation-btn {
+    width: 5rem;
+    height: 2rem;
+  }
+
+  .res-name {
+    font-size: 1.1rem;
+  }
+}

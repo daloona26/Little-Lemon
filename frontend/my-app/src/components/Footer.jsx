@@ -16,13 +16,10 @@ const Footer = () => {
         <a className="link" href="#about">
           About
         </a>
-        <a className="link" href="#menu">
-          Menu
-        </a>
         <a className="link" href="/reservations">
           Reservations
         </a>
-        <a className="link" href="#order-online">
+        <a className="link" href="/order-online">
           Order Online
         </a>
         <a className="link" href="/login">

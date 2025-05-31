@@ -10,6 +10,8 @@ import Reservations from "./components/Reservations";
 import { ReservationProvider } from "./context/ReservationContext";
 import Login from "./components/Login";
 import Signup from "./components/SignUp";
+import OrderOnline from "./components/OrderOnline";
+import Menu from "./components/Menu";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,10 +21,10 @@ root.render(
         <Route index path="/" element={<App />} />
         <Route path="/booking" element={<BookingPage />} />
         <Route path="/reservations" element={<Reservations />} />
+        <Route path="/order-online" element={<OrderOnline />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-
-
       </Routes>
     </ReservationProvider>
   </BrowserRouter>
