@@ -128,7 +128,6 @@ STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEBUG = True
-# ALLOWED_HOSTS = ['daloon26.pythonanywhere.com']
 ALLOWED_HOSTS = []
 
 # Default primary key field type
